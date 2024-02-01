@@ -8,7 +8,9 @@ export let options = {
 //Load test
 //Targer 5 user, selama 5 detik
     stages : [
+        {duration: '1s', target : 5},
         {duration: '5s', target : 5},
+        {duration: '1s', target : 0},
     ],
 }
 

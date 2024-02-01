@@ -23,6 +23,14 @@ export default function(){
             'is status 201' : (r) => r.status == 201
         });
         
+        group("Reqres Get Single User",()=>{
+            let url = "https://reqres.in/api/users";
+            let response3 = http.get(url);
+            check(response3, {
+                'is status 200' : (r) => r.status == 200
+            });
+        });
+
     });
 
 

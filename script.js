@@ -44,3 +44,8 @@ export function handleSummary(data) {
       stdout: textSummary(data, { indent: " ", enableColors: true }),
     };
 };
+
+/**
+ * ---Command for run more than 1 vu (virtual user)---
+ * k6 run --vus 10 --duration 5s scri pt.js
+ */

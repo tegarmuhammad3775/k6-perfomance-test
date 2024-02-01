@@ -5,7 +5,6 @@ import { textSummary } from "https://jslib.k6.io/k6-summary/0.0.1/index.js";
 
 export let options = {
   //Load test
-  //Target 5 user, selama 5 detik
   //   stages: [
   //     { duration: "1s", target: 5 },
   //     { duration: "5s", target: 5 },
@@ -13,10 +12,19 @@ export let options = {
   //   ],
 
   //Stress test
+  //   stages: [
+  //     { duration: "1s", target: 5 },
+  //     { duration: "5s", target: 5 },
+  //     { duration: "5s", target: 10 },
+  //     { duration: "1s", target: 0 },
+  //   ],
+
+  //Spike test
   stages: [
     { duration: "1s", target: 5 },
     { duration: "5s", target: 5 },
-    { duration: "5s", target: 10 },
+    { duration: "3s", target: 25 },
+    { duration: "5s", target: 5 },
     { duration: "1s", target: 0 },
   ],
 };

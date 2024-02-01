@@ -1,7 +1,7 @@
 import http from "k6/http"
 
 export default function(){
-    http.get('https://test.k6.io');
+    let response1 = http.get('https://test.k6.io');
 
     let url = "https://reqres.in/api/users";
     let body = JSON.stringify(
@@ -10,5 +10,6 @@ export default function(){
         "job": "leader"
       }
     )
-    http.post(url,body)
+    let response2 = http.post(url,body)
+    console.log(JSON.stringify(response2.body))
 }

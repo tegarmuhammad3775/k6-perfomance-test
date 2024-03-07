@@ -1,4 +1,4 @@
-**Perfomance Test with Grafana K6**
+# Perfomance Test with Grafana K6
 
 **=> How To Run**
 <br> -> Open Folder into integrated terminal

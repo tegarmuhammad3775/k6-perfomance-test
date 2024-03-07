@@ -1,8 +1,8 @@
 **Perfomance Test with Grafana K6**
 
 **=> How To Run**
--> Open Folder into integrated terminal
--> run command :
+<br> -> Open Folder into integrated terminal
+<br> -> run command :
    - k6 run script.js
    - k6 run --vus 10 --duration 5s script.js (for run more than 1 vu (virtual user)
 
